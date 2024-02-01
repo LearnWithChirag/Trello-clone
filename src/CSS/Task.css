@@ -1,0 +1,8 @@
+li.task-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.task-list svg{
+    width: 1rem;
+}

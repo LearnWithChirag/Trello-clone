@@ -1,0 +1,35 @@
+.card{
+    background-color: #ebecf0;
+    padding: 1rem;
+    width: 20rem;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card header{
+    color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    overflow-y: auto;
+}
+
+.card ul li{
+    background-color: white;
+    padding: 1rem;
+    /* gap: 1rem; */
+}
+
+.card footer{
+    font-weight: 600;
+    color: grey;
+}
