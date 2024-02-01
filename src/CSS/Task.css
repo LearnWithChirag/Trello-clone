@@ -1,6 +1,7 @@
 li.task-item{
     display: flex;
     justify-content: space-between;
+    /* overflow-y: auto; */
 }
 
 ul.task-list svg{
