@@ -13,10 +13,10 @@ background: linear-gradient(180deg, rgba(49,49,196,1) 15%, rgba(0,212,255,1) 100
 }
 
 .app{
-    margin: 1rem;
+    /* margin: 1rem; */
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     
 }
 
@@ -26,14 +26,19 @@ background: linear-gradient(180deg, rgba(49,49,196,1) 15%, rgba(0,212,255,1) 100
     overflow-x: auto;
 }
 
+.new-card{
+    display: flex;
+    flex-direction: column;
+}
+
 .new-card span{
     background-color: wheat;
     padding: 1rem;
     display: flex;
     gap: .7rem;
     align-items: center;
-    margin: 1rem;
-    width: 19rem;
+    margin: .5rem;
+    width: 15rem;
     border-radius: .3rem;
     cursor: pointer;
 }
@@ -43,5 +48,38 @@ background: linear-gradient(180deg, rgba(49,49,196,1) 15%, rgba(0,212,255,1) 100
 }
 
 .new-card svg{
+    width: 1rem;
+}
+
+.add-card{
+    margin:  .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.add-card input{
+    padding: .5rem;
+    border-radius: .3rem;
+    border: none;
+}
+
+.add-btn{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.add-btn button{
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: none;
+    cursor: pointer;
+    background-color: wheat;
+}
+
+.add-btn svg{
+    cursor: pointer;
     width: 1rem;
 }

@@ -1,14 +1,14 @@
 .card{
     background-color: #ebecf0;
     padding:  .8rem;
-    width: 19rem;
+    width: 16rem;
     max-height: 80vh;
     /* overflow-y: auto; */
     display: flex;
     flex-direction: column;
     border-radius: .3rem;
     gap: 1rem;
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .card header{
@@ -34,11 +34,11 @@
 .task-item{
     background-color: white;
     border-radius: .3rem;
-    padding: 1rem .5rem;
+    padding: .8rem .5rem;
     box-shadow: 0 .1rem  grey;
     cursor: pointer;
     display: flex;
-
+    font-size: .8rem;
     justify-content: space-between;
     /* gap: 1rem; */
 }

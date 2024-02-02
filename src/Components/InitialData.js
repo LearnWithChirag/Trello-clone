@@ -14,21 +14,21 @@ export const InitialData = {
                             id: 'card1',
                             boardId: 'board1',
                             columnId: 'todo',
-                            title: 'Hello guys chai pilo',
+                            title: 'Hello, Myself Chirag Paliwal',
                             image: null
                         },
                         {
                             id: 'card2',
                             boardId: 'board1',
                             columnId: 'todo',
-                            title: 'Hello guys chai pilo',
+                            title: 'Pursuing MCA',
                             image: null
                         },
                         {
                             id: 'card3',
                             boardId: 'board1',
                             columnId: 'todo',
-                            title: 'Hello guys chai pilo',
+                            title: 'lorem lorem idbajb hvfasbj',
                             image: null
                         }
                     ]
