@@ -43,21 +43,21 @@ export const InitialData = {
                             id: 'card4',
                             boardId: 'board1',
                             columnId: 'doing',
-                            title: 'Hello guys chai pilo',
+                            title: 'Frontend developer',
                             image: null
                         },
                         {
                             id: 'card5',
                             boardId: 'board1',
                             columnId: 'doing',
-                            title: 'Hello guys coffee pilo',
+                            title: 'Full Stack developer',
                             image: null
                         },
                         {
                             id: 'card6',
                             boardId: 'board1',
                             columnId: 'doing',
-                            title: 'Hello guys dudh pilo',
+                            title: 'ReactJS Intern',
                             image: null
                         }
                     ]
@@ -86,21 +86,21 @@ export const InitialData = {
                             id: 'card9',
                             boardId: 'board1',
                             columnId: 'done',
-                            title: 'Hello guys chai ',
+                            title: 'Thanks For Visiting',
                             image: null
                         },
                         {
                             id: 'card10',
                             boardId: 'board1',
                             columnId: 'done',
-                            title: 'Hello ',
+                            title: 'Looking forward to see you in Interview',
                             image: null
                         },
                         {
                             id: 'card11',
                             boardId: 'board1',
                             columnId: 'done',
-                            title: 'Hello guys ',
+                            title: 'Thank you for opportunity',
                             image: null
                         }
                     ]

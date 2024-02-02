@@ -7,7 +7,7 @@ const Task = (props) => {
   return (
     <div className="task-list">
       <div className="task-item">
-        {card.image && <img className="img" src={card.image} />
+        {card.image && <img className="img" src={card.image} alt="title img"/>
         }
         {card.title}
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">

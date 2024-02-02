@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import Card from "./Components/Card";
 import { InitialData } from "./Components/InitialData";
 import { Container, Draggable } from "react-smooth-dnd";
-import _, { drop } from "lodash";
+import _ from "lodash";
 import { applyDrag } from "./Components/Dnd";
 
 function App() {
@@ -53,6 +53,10 @@ function App() {
         <div className="not-found">Board not found</div>
       </>
     );
+  }
+
+  const handleAddStage =()=>{
+
   }
 
   return (
