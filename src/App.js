@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./CSS/App.css";
 import Navbar from "./Components/Navbar";
 import Card from "./Components/Card";
@@ -6,12 +6,20 @@ import { InitialData } from "./Components/InitialData";
 import { Container, Draggable } from "react-smooth-dnd";
 import _ from "lodash";
 import { applyDrag } from "./Components/Dnd";
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
   const [board, setBoard] = useState({});
   const [card, setCard] = useState([]);
 
   const [showAddStage , setShowAddStage] = useState(false);
+  const inputRef = useRef(null);
+  const [valueInput , setValueInput] = useState("");
+  useEffect(()=>{
+    if (showAddStage === true && inputRef && inputRef.current){
+      inputRef.current.focus();
+    }
+  }, [showAddStage])
 
   useEffect(() => {
     const initialData = InitialData.boards.find((item) => item.id === "board1");
@@ -56,7 +64,22 @@ function App() {
   }
 
   const handleAddStage =()=>{
-
+    if(!valueInput ){
+      if(inputRef && inputRef.current)
+      inputRef.current.focus();
+      return;
+    }
+    // update stages
+    const _column = _.cloneDeep(card);
+    _column.push({
+      id:uuidv4(),
+      boardId : board.id,
+      title: valueInput,
+      cards :[]
+    });
+    setCard(_column);
+    setValueInput("");
+    inputRef.current.focus();
   }
 
   return (
@@ -97,7 +120,7 @@ function App() {
         </div>
           :
         <div className="add-card">
-          <input type="text" />
+          <input type="text" ref={inputRef} value={valueInput} onChange={(e)=> setValueInput(e.target.value)} />
           <div className="add-btn">
             <button onClick={() => handleAddStage()}>Add Stage</button>
             <svg onClick={() => setShowAddStage(!showAddStage)} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
